@@ -11,3 +11,4 @@ i also used PyInstaller to create an .exe file to make it easier to execute and 
 ## future changes
 - group the different lists that deals with the file formats in a dictionary with nested lists
 - change some variables to make the code more readable
+- add support to excel files
