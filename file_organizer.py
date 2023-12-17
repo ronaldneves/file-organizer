@@ -4,13 +4,8 @@ import shutil
 
 
 ## globals
-zip_files = 0
-img_files = 0
-doc_files = 0
-exe_files = 0
-
 compact_formats = ['.zip', '.rar', '.7z']
-media_formats = ['.jpg', '.jpeg', '.png', '.gif', '.mp4', '.mkv']
+media_formats = ['.jpg', '.jpeg', '.png', '.gif', '.mp4', '.mkv', '.jfif']
 document_formats = ['.doc', '.docx', '.pdf', '.ppt', '.csv', '.log']
 installers_formats = ['.exe', '.msi', '.iso']
 new_folders_path = ['Instaladores', 'Arquivos de Mídia', 'Documentos', 'Zips e Rars', 'Etc']
@@ -62,7 +57,7 @@ def move_files(path, new_path):
 
 def main():
     print("File organizer. Separates files based on their extension and puts on the correspondent folder. ")
-    windows_path = input("Insert the path of the folder you want to organize. ")
+    windows_path = input("Insert the path of the folder you want to organize. ") + "/"
 
     check_folders(windows_path, new_folders_path)
     move_files(windows_path, new_folders_path)
